@@ -20,12 +20,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        etEmail = findViewById(R.id.etEmail)
-        etFullname = findViewById(R.id.etFullname)
-        etUsername = findViewById(R.id.etUsername)
-        etPassword = findViewById(R.id.etPassword)
-
-
         val btnSignUp = findViewById<Button>(R.id.btnSignUp)
 
 

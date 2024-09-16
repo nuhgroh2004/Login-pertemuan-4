@@ -1,8 +1,21 @@
-<!-- res/drawable/edittext_border.xml -->
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="#FFFFFF"/>
-    <corners android:radius="10dp"/>
-    <stroke
-        android:width="2dp"
-        android:color="#CCCCCC"/>
-</shape>
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+    <shape android:shape="rectangle"
+        >
+        <gradient
+            android:startColor="#20FFFFFF"
+            android:centerColor="#0500CC54"
+            android:endColor="#20B379DF"
+            android:angle="270" />
+        <corners
+            android:topLeftRadius="8dp"
+            android:topRightRadius="8dp"
+            android:bottomLeftRadius="8dp"
+            android:bottomRightRadius="8dp"/>
+        <stroke
+            android:width="2dp"
+            android:color="#CCCCCC"/>
+    </shape>
+</item>
+</layer-list>

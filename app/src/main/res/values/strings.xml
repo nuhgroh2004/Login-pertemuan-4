@@ -8,4 +8,13 @@
     <string name="dont_have_account">Don\'t have an account?</string>
     <string name="full_name">Fullname</string>
     <string name="user_name">Username</string>
+    <string name="title_activity_third">ThirdActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string-array name="gender_options">
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
+
 </resources>
