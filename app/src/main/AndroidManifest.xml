@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Login"
         tools:targetApi="31">
         <activity
+            android:name=".ThirdActivity3"
+            android:exported="false" />
+        <activity
             android:name=".ThirdActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="false"

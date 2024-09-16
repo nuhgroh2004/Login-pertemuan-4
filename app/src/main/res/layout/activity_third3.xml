@@ -5,14 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
+    android:background="#151316"
     android:layout_height="match_parent"
-    android:background="@drawable/backround_profil"
     tools:context=".SecondActivity2">
 
     <ImageView
         android:layout_width="0dp"
-        android:layout_height="150dp"
-        android:background="@color/blue"
+        android:layout_height="60dp"
+        android:background="#598D0DEE"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -21,25 +21,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Profile"
-        android:textSize="30sp"
+        android:textSize="24sp"
         android:textColor="@android:color/white"
         android:gravity="center"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="20dp"
+        android:layout_marginRight="200dp"
+        android:layout_marginTop="12dp"
         />
 
     <!-- ImageView berbentuk bulat di tengah -->
     <ImageView
         android:id="@+id/profileImage"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:background="@drawable/circular_background"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="10dp"
         android:src="@drawable/person"
+        android:layout_marginRight="340dp"
         />
 
     <TextView
@@ -51,6 +53,7 @@
         android:textStyle="bold"
         android:text="Email"
         android:padding="12dp"
+        android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@id/profileImage"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,40 +61,44 @@
         android:layout_marginEnd="50dp"/>
 
     <TextView
-        android:id="@+id/txt_email"
+        android:id="@+id/txtEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:textSize="14sp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
         android:background="@drawable/input_border"
         android:padding="12dp"
-        app:layout_constraintTop_toBottomOf="@id/txt_email_text"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="14sp"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"/>
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_email_text" />
 
     <TextView
-        android:id="@+id/txt_fullname_text"
+        android:id="@+id/txt_password_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textSize="16sp"
+        android:textColor="@color/white"
         android:textStyle="bold"
-        android:text="full name"
+        android:text="Password"
         android:padding="12dp"
-        app:layout_constraintTop_toBottomOf="@id/txt_email"
+        app:layout_constraintTop_toBottomOf="@id/txtEmail"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"/>
 
     <TextView
-        android:id="@+id/txt_fullname"
+        android:id="@+id/txtPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textSize="14sp"
         android:background="@drawable/input_border"
         android:padding="12dp"
-        app:layout_constraintTop_toBottomOf="@id/txt_fullname_text"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/txt_password_text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="50dp"
@@ -103,21 +110,23 @@
         android:layout_height="wrap_content"
         android:textSize="16sp"
         android:textStyle="bold"
-        android:text="full name"
+        android:text="User Name"
         android:padding="12dp"
-        app:layout_constraintTop_toBottomOf="@id/txt_fullname"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/txtPassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"/>
 
     <TextView
-        android:id="@+id/txt_username"
+        android:id="@+id/txtUsername"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textSize="14sp"
         android:background="@drawable/input_border"
         android:padding="12dp"
+        android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@id/txt_username_text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -126,14 +135,15 @@
 
 
     <TextView
-        android:id="@+id/txt_pasword_text"
+        android:id="@+id/txt_no_hp_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textSize="16sp"
         android:textStyle="bold"
-        android:text="full name"
+        android:text="No Hendphone"
         android:padding="12dp"
-        app:layout_constraintTop_toBottomOf="@id/txt_username"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/txtUsername"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="50dp"
@@ -141,27 +151,58 @@
 
 
     <TextView
-        android:id="@+id/txt_password"
+        android:id="@+id/txtNohp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textSize="14sp"
         android:background="@drawable/input_border"
         android:padding="12dp"
-        app:layout_constraintTop_toBottomOf="@id/txt_pasword_text"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/txt_no_hp_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"/>
+
+    <TextView
+        android:id="@+id/txt_jenis_kelamin_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Jenis Kelamin"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/txtNohp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"/>
+
+
+    <TextView
+        android:id="@+id/txtJenisKelamin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:background="@drawable/input_border"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/txt_jenis_kelamin_text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"/>
 
     <Button
-        android:id="@+id/btn_edit"
+        android:id="@+id/btnEdit"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Edit Profile"
         android:backgroundTint="@color/blue"
         android:textColor="@color/white"
-        app:layout_constraintTop_toBottomOf="@id/txt_password"
+        app:layout_constraintTop_toBottomOf="@id/txtJenisKelamin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="50dp"
